@@ -84,7 +84,7 @@ function addMatch(win, champion,kda,cs,gold,minutes,date, dest) {
     
 }
 
-var api_key = "RGAPI-34e1da8a-0ad7-44af-b67a-af51cb0b6f6e"
+var api_key = 
 
 
 async function get_summoner_info(){
