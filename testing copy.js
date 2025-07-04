@@ -16,7 +16,7 @@ function addMatchElement(str, dest) {
   currentDiv.appendChild(lb);
 }
 
-var api_key = "RGAPI-b44e6975-a7f0-4153-943c-54fd0397aef0"
+var api_key = 
 
 
 async function get_summoner_info(){
