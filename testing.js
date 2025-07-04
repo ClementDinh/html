@@ -125,6 +125,7 @@ async function get_match_info(match_id){
 }
 
 async function show_summoner_stats(){
+    document.getElementById("match").style.display = "none"
     document.getElementById("match").innerHTML = "";
     let summoner_info = await get_summoner_info();
     puuid = summoner_info["puuid"];
@@ -168,6 +169,7 @@ async function show_summoner_stats(){
     document.getElementById("wr").innerText = Math.round((wins/(wins+losses))*100) + "% WR";
 
     for(let i = 0; i<match_ids.length; i++){
+        
         let match_info = await get_match_info(match_ids[i]);
         participants = match_info['info']['participants']
         let team = match_info['info']['teams'][0];
@@ -202,7 +204,7 @@ async function show_summoner_stats(){
     }
     //participants['totalAllyJungleMinionsKilled'] + participants['totalEnemyJungleMinionsKilled']
     // addMatch("hi", "match");       
-    
+    document.getElementById("match").removeAttribute("style")
 }
 
 // show_summoner_stats();
