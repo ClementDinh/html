@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First  html file</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="ms.png" type="image/x-icon">
+        <script src="testing.js"></script>
+    </head>
+    <body>
+        <h1 style="text-align:center;">My Webpage</h1>
+        <p style="color: tomato; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align:center; background-color:blue; font-size: 180%">
+            <br><a href="https://op.gg/lol/summoners/na/Kafuu%20Cheetoes-petit"><img src="img.jpg" alt="nahida eating burger" width="400" title="op.gg"></a><br>
+            This is nahida eating a burger <br><br>
+        </p>
+        
+       
+        <form action="" method="post" id="frm1" class="form">
+            <div>
+                <label for="gameName">Summoner Name</label><br>
+                <input type="text" id="gameName" name="gameName">
+            </div>
+            <div>
+                <label for="tagline">Tag</label><br>
+                <input type="text" id="tagline" name="tagline"> 
+            </div>
+
+            <div>
+                <button type="button" onclick="show_summoner_stats()">Fetch</button>
+            </div>
+     
+        </form>
+
+        
+
+        <p id="error"></p>
+        
+        <div id="summoner"></div>
+        <div id ="rank"></div>
+        <div id="wr"></div><br>  
+        <p id = "match">
+            
+        </p>
+    </body>
+</html>
